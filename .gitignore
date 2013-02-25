@@ -3,3 +3,11 @@
 *.jar
 *.war
 *.ear
+
+*.apk
+*.ap_
+*.dex
+
+bin/
+gen/
+local.properties
