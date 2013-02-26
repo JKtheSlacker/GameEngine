@@ -50,10 +50,10 @@ public class AndroidGraphics implements Graphics {
 			in = assets.open(fileName);
 			bitmap = BitmapFactory.decodeStream(in, null, options);
 			if (bitmap == null)
-				throw new RunTimeException("Couldn't load bitmap from asset '"
+				throw new RuntimeException("Couldn't load bitmap from asset '"
 						+ fileName + "'");
 		} catch (IOException e) {
-			throw new RunTimeException("Couldn't load bitmap from asset '"
+			throw new RuntimeException("Couldn't load bitmap from asset '"
 					+ fileName + "'");
 		} finally {
 			if (in != null) {

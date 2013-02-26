@@ -6,7 +6,7 @@ import com.slaxer.framework.Sound;
 
 public class AndroidSound implements Sound {
 	int soundId;
-	SoundPool sound;
+	SoundPool soundPool;
 
 	public AndroidSound(SoundPool soundPool, int soundId) {
 		this.soundId = soundId;

@@ -97,7 +97,7 @@ public class MultiTouchHandler implements TouchHandler {
 	}
 
 	@Override
-	public boolean istouchDown(int pointer) {
+	public boolean isTouchDown(int pointer) {
 		synchronized(this){
 			int index = getIndex(pointer);
 			if(index < 0 || index >= MAX_TOUCHPOINTS)

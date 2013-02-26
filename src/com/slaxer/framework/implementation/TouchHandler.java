@@ -7,7 +7,7 @@ import android.view.View.OnTouchListener;
 import com.slaxer.framework.Input.TouchEvent;
 
 public interface TouchHandler extends OnTouchListener {
-	public boolean istouchDown(int pointer);
+	public boolean isTouchDown(int pointer);
 	
 	public int getTouchX(int pointer);
 	

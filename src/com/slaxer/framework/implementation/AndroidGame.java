@@ -43,9 +43,9 @@ public abstract class AndroidGame extends Activity implements Game {
 				frameBufferHeight, Config.RGB_565);
 
 		float scaleX = (float) frameBufferWidth
-				/ getWindowManager.getDefaultDisply().getWidth();
+				/ getWindowManager().getDefaultDisplay().getWidth();
 		float scaleY = (float) frameBufferHeight
-				/ getWindowManager.getDefaultDisplay().getHeight();
+				/ getWindowManager().getDefaultDisplay().getHeight();
 
 		renderView = new AndroidFastRenderView(this, frameBuffer);
 		graphics = new AndroidGraphics(getAssets(), frameBuffer);
