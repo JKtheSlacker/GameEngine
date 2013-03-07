@@ -77,5 +77,12 @@ public class CollRect extends Rectangle {
 	public void setColor(int color){
 		this.color = color;
 	}
+	
+	// So that you can check what color
+	// is currently being used. Convert to
+	// a Color for best results.
+	public int getColor(){
+		return this.color;
+	}
 
 }
